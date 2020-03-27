@@ -15,6 +15,31 @@ _global_script_classes=[ {
 "path": "res://util/herarchical_state.gd"
 }, {
 "base": "Node",
+"class": "InputHandler",
+"language": "GDScript",
+"path": "res://input/input.gd"
+}, {
+"base": "Node",
+"class": "MovementStateMachine",
+"language": "GDScript",
+"path": "res://character/player/movement_state_machine/movement_state_machine.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Player",
+"language": "GDScript",
+"path": "res://character/player/player.gd"
+}, {
+"base": "Node",
+"class": "PlayerIdle",
+"language": "GDScript",
+"path": "res://character/player/movement_states/idle.gd"
+}, {
+"base": "Node",
+"class": "PlayerMoving",
+"language": "GDScript",
+"path": "res://character/player/movement_states/moving.gd"
+}, {
+"base": "Node",
 "class": "PushDownAutomata",
 "language": "GDScript",
 "path": "res://util/push_down_automata.gd"
@@ -36,6 +61,11 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "HerarchicalState": "",
+"InputHandler": "",
+"MovementStateMachine": "",
+"Player": "",
+"PlayerIdle": "",
+"PlayerMoving": "",
 "PushDownAutomata": "",
 "State": "",
 "StateMachine": "",
@@ -45,11 +75,13 @@ _global_script_class_icons={
 [application]
 
 config/name="BaseDefense"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 UtilFunctions="*res://util/utilFunctions.gd"
+PlayerInput="*res://input/player_input/player_input.gd"
 
 [rendering]
 
