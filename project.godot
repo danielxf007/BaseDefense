@@ -8,15 +8,48 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node",
+"class": "HerarchicalState",
+"language": "GDScript",
+"path": "res://util/herarchical_state.gd"
+}, {
+"base": "Node",
+"class": "PushDownAutomata",
+"language": "GDScript",
+"path": "res://util/push_down_automata.gd"
+}, {
+"base": "Node",
+"class": "State",
+"language": "GDScript",
+"path": "res://util/state.gd"
+}, {
+"base": "Node",
+"class": "StateMachine",
+"language": "GDScript",
+"path": "res://util/stateMachine.gd"
+}, {
+"base": "Node",
+"class": "Tuple",
+"language": "GDScript",
+"path": "res://util/tuple.gd"
+} ]
 _global_script_class_icons={
-
+"HerarchicalState": "",
+"PushDownAutomata": "",
+"State": "",
+"StateMachine": "",
+"Tuple": ""
 }
 
 [application]
 
 config/name="BaseDefense"
 config/icon="res://icon.png"
+
+[autoload]
+
+UtilFunctions="*res://util/utilFunctions.gd"
 
 [rendering]
 
