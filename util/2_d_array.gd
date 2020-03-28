@@ -9,6 +9,9 @@ func init(dim: Tuple, arr: Array):
 	self.dimensions = dim
 	self.array = arr
 
+func get_dimensions() -> Tuple:
+	return self.dimensions
+
 func valid_indexes(_indexes: Tuple) -> bool:
 	return false
 
