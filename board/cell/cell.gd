@@ -22,3 +22,6 @@ func get_element():
 
 func set_position_on_world(new_position: Vector2) -> void:
 	self.global_position = new_position
+
+func set_name(new_name: String) -> void:
+	self.name = new_name
