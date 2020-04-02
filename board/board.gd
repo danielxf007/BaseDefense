@@ -21,7 +21,6 @@ func _ready():
 	self.CELL_SCENE)
 	var map: Array = self.get_map(self.FILE, " ")
 	if not map == [] and not self.array == []:
-		print(self.array.size())
 		var map_size: Tuple = Tuple.new(map.size(), map[0].size()) 
 		var args: Dictionary = {"start": Tuple.new(0, 0), "map_size": map_size,
 		"map": map}
@@ -60,7 +59,7 @@ func get_map(file: String, element_separator: String) -> Array:
 		var line = f.get_line()
 		column = []
 		for element in line:
-			if not element in element_separator:
+			if not element == element_separator:
 				column.append(element)
 		map.append(column)
 	f.close()

@@ -107,6 +107,11 @@ config/icon="res://icon.png"
 UtilFunctions="*res://util/utilFunctions.gd"
 PlayerInput="*res://input/player_input/player_input.gd"
 
+[display]
+
+window/size/width=1008
+window/size/height=496
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
