@@ -67,7 +67,6 @@ func get_map(file: String, element_separator: String) -> Array:
 	return map
 
 func organize_cells_texture(args: Dictionary) -> void:
-	var flag: bool = true
 	for i in range(args["start"].i, args["map_size"].i):
 		for j in range(args["start"].j, args["map_size"].j):
 			self.array[i][j].texture = self.TEXTURES[args["map"][i][j]]
