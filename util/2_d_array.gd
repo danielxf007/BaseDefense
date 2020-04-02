@@ -18,7 +18,7 @@ func valid_indexes(_indexes: Tuple) -> bool:
 func add_element(_row_index: int, _element) -> void:
 	pass
 
-func add_column(_row_index: int, _column: Array) -> void:
+func add_column(_column: Array) -> void:
 	pass
 
 func delete_element(_indexes: Tuple) -> void:

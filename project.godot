@@ -9,10 +9,20 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Node",
+"class": "Board",
+"language": "GDScript",
+"path": "res://board/board.gd"
+}, {
 "base": "Sprite",
 "class": "Cell",
 "language": "GDScript",
 "path": "res://board/cell/cell.gd"
+}, {
+"base": "Node",
+"class": "GameBoard",
+"language": "GDScript",
+"path": "res://board/game_board.gd"
 }, {
 "base": "Node",
 "class": "HerarchicalState",
@@ -70,7 +80,9 @@ _global_script_classes=[ {
 "path": "res://util/2_d_array.gd"
 } ]
 _global_script_class_icons={
+"Board": "",
 "Cell": "",
+"GameBoard": "",
 "HerarchicalState": "",
 "InputHandler": "",
 "MovementStateMachine": "",

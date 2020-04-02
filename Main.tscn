@@ -1,8 +1,33 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://character/player/Girl.tscn" type="PackedScene" id=1]
+[ext_resource path="res://board/game_board.gd" type="Script" id=2]
+[ext_resource path="res://board/cell/Cell.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/cells/3.png" type="Texture" id=4]
+[ext_resource path="res://assets/cells/2.png" type="Texture" id=5]
+[ext_resource path="res://assets/cells/1.png" type="Texture" id=6]
+[ext_resource path="res://assets/cells/4.png" type="Texture" id=7]
 
 [node name="Main" type="Node"]
 
 [node name="Girl" parent="." instance=ExtResource( 1 )]
 position = Vector2( 231.118, 132.33 )
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource( 2 )
+FILE = "res://board/matrix.txt"
+CELL_X_DIM = 16.0
+CELL_Y_DIM = 16.0
+BOARD_TOP_POS = Vector2( 8, 8 )
+TEXTURES = {
+"1": ExtResource( 6 ),
+"2": ExtResource( 5 ),
+"3": ExtResource( 4 ),
+"4": ExtResource( 7 )
+}
+CELLS_NODE_PATH = NodePath("Cells")
+NUMBER_OF_CELLS_COLUMNS = 63
+NUMBER_OF_CELLS_ROWS = 31
+CELL_SCENE = ExtResource( 3 )
+
+[node name="Cells" type="Node2D" parent="Node"]
