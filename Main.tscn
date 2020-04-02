@@ -11,9 +11,6 @@
 
 [node name="Main" type="Node"]
 
-[node name="Girl" parent="." instance=ExtResource( 1 )]
-position = Vector2( 231.118, 132.33 )
-
 [node name="Node" type="Node" parent="."]
 script = ExtResource( 2 )
 FILE = "res://board/matrix.txt"
@@ -33,3 +30,9 @@ NUMBER_OF_CELLS_ROWS = 31
 CELL_SCENE = ExtResource( 3 )
 
 [node name="Cells" type="Node2D" parent="Node"]
+
+[node name="Sprite" type="Sprite" parent="Node"]
+position = Vector2( 8, 8 )
+
+[node name="Girl" parent="." instance=ExtResource( 1 )]
+position = Vector2( 231.118, 132.33 )

@@ -30,6 +30,7 @@ func _ready():
 func create_column_cells(starting_point: Vector2, n_cells: int,
  cell_dimensions: Tuple, cell_packed_scene: PackedScene) -> Array:
 	var cell: Cell = cell_packed_scene.instance()
+	self.cells_node.add_child(cell)
 	cell.position = starting_point
 	var cell_column: Array = [cell]
 	var before_cell: Cell
