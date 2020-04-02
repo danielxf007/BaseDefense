@@ -20,12 +20,11 @@ func _ready():
 	self.NUMBER_OF_CELLS_COLUMNS, Tuple.new(self.CELL_X_DIM, self.CELL_Y_DIM),
 	self.CELL_SCENE)
 	var map: Array = self.get_map(self.FILE, " ")
-	if not map == [] and not self.array == []:
-		var map_size: Tuple = Tuple.new(map.size(), map[0].size()) 
-		var args: Dictionary = {"start": Tuple.new(0, 0), "map_size": map_size,
-		"map": map}
-		self.organize_cells_texture(args)
-		self.board_created()
+	var map_size: Tuple = Tuple.new(map.size(), map[0].size())
+	var args: Dictionary = {"start": Tuple.new(0, 0), "map_size": map_size,
+	"map": map}
+	self.organize_cells_texture(args)
+	self.board_created()
 
 func create_column_cells(starting_point: Vector2, n_cells: int,
  cell_dimensions: Tuple, cell_packed_scene: PackedScene) -> Array:
@@ -68,6 +67,7 @@ func get_map(file: String, element_separator: String) -> Array:
 	return map
 
 func organize_cells_texture(args: Dictionary) -> void:
+	var flag: bool = true
 	for i in range(args["start"].i, args["map_size"].i):
 		for j in range(args["start"].j, args["map_size"].j):
 			self.array[i][j].texture = self.TEXTURES[args["map"][i][j]]

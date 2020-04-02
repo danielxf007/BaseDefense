@@ -14,9 +14,9 @@
 [node name="Node" type="Node" parent="."]
 script = ExtResource( 2 )
 FILE = "res://board/matrix.txt"
-CELL_X_DIM = 16.0
-CELL_Y_DIM = 16.0
-BOARD_TOP_POS = Vector2( 8, 8 )
+CELL_X_DIM = 32.0
+CELL_Y_DIM = 32.0
+BOARD_TOP_POS = Vector2( 16, 16 )
 TEXTURES = {
 "0": ExtResource( 8 ),
 "1": ExtResource( 6 ),
