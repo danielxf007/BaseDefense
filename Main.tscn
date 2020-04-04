@@ -25,8 +25,8 @@ TEXTURES = {
 "4": ExtResource( 7 )
 }
 CELLS_NODE_PATH = NodePath("Cells")
-NUMBER_OF_CELLS_COLUMNS = 32
-NUMBER_OF_CELLS_ROWS = 30
+NUMBER_OF_CELLS_COLUMNS = 31
+NUMBER_OF_CELLS_ROWS = 19
 CELL_SCENE = ExtResource( 3 )
 
 [node name="Cells" type="Node2D" parent="Node"]

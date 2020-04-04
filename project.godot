@@ -109,7 +109,8 @@ PlayerInput="*res://input/player_input/player_input.gd"
 
 [display]
 
-window/size/height=640
+window/size/width=992
+window/size/height=608
 
 [rendering]
 
