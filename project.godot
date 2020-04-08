@@ -54,6 +54,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://character/player/movement_states/moving.gd"
 }, {
+"base": "Area2D",
+"class": "Projectile",
+"language": "GDScript",
+"path": "res://projectile/projectile.gd"
+}, {
 "base": "Node",
 "class": "PushDownAutomata",
 "language": "GDScript",
@@ -89,6 +94,7 @@ _global_script_class_icons={
 "Player": "",
 "PlayerIdle": "",
 "PlayerMoving": "",
+"Projectile": "",
 "PushDownAutomata": "",
 "State": "",
 "StateMachine": "",
