@@ -14,6 +14,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://board/board.gd"
 }, {
+"base": "Area2D",
+"class": "Bullet",
+"language": "GDScript",
+"path": "res://projectile/bullet/bulltet.gd"
+}, {
 "base": "Sprite",
 "class": "Cell",
 "language": "GDScript",
@@ -86,6 +91,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "Board": "",
+"Bullet": "",
 "Cell": "",
 "GameBoard": "",
 "HerarchicalState": "",
