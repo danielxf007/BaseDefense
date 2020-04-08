@@ -6,6 +6,7 @@ var element
 var selected: bool = false
 var selected_color: String
 var deselected_color: String
+var cell_type: String
 
 func set_element(new_element) -> void:
 	if not self.has_element():
